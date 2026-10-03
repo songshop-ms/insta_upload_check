@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>릴스 올리기 전 바꿔야 할 인스타 설정 7가지 — 영구오빠</title>
+<meta name="description" content="조회수가 안 나온다면 콘텐츠보다 먼저 볼 것. 내 게시물이 퍼지는 길을 좁히는 인스타 기본값 7가지, 5분이면 끝납니다.">
+<meta name="author" content="영구오빠">
+<meta name="theme-color" content="#F4EEE6">
+<meta property="og:type" content="article">
+<meta property="og:title" content="릴스 올리기 전 바꿔야 할 인스타 설정 7가지 — 영구오빠">
+<meta property="og:description" content="조회수가 안 나온다면 콘텐츠보다 먼저 볼 것. 내 게시물이 퍼지는 길을 좁히는 인스타 기본값 7가지, 5분이면 끝납니다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F4EEE6; --card:#FBF8F3; --ink:#2B2521; --body:#3A342E;
+    --muted:#8A7E72; --clay:#A6785F; --clay-dk:#8A5E45; --clay-lt:#C9A488;
+    --deep:#6E4A34; --line:rgba(43,37,33,0.16); --line-soft:rgba(43,37,33,0.08);
+    --ok:#5E7F5E; --bad:#A8543A;
+    --serif:'Noto Serif KR',serif; --sans:'Noto Sans KR',sans-serif; --disp:'Cormorant Garamond',serif;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{margin:0;background:var(--paper)}
+  body{font-family:var(--serif);color:var(--ink);-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+  ::selection{background:#D9B79F;color:var(--ink)}
+
+  .eyebrow-bar{max-width:720px;margin:0 auto;padding:34px 28px 0;display:flex;align-items:center;justify-content:center;gap:12px}
+  .eyebrow-bar span.rule{height:1px;width:34px;background:rgba(43,37,33,0.25)}
+  .eyebrow-bar span.txt{font-family:var(--sans);font-size:11px;letter-spacing:.34em;color:var(--clay-dk);font-weight:700}
+
+  main{max-width:680px;margin:0 auto;padding:0 28px 120px}
+
+  .kicker{font-family:var(--sans);font-size:12px;letter-spacing:.32em;color:var(--clay);font-weight:700;margin-bottom:22px}
+  h1{font-size:34px;font-weight:700;line-height:1.42;letter-spacing:-.01em;margin:0 0 28px}
+  p{font-size:18px;line-height:1.95;color:var(--body);margin:0 0 1.4em}
+  b{font-weight:600}
+
+  .lede{padding-top:80px}
+  .meta{font-family:var(--sans);font-size:13px;color:var(--muted);letter-spacing:.02em;line-height:2;border-top:1px solid var(--line);padding-top:20px;margin-top:36px}
+
+  /* 섹션 */
+  .step{padding-top:76px}
+  .step-head{display:flex;align-items:baseline;gap:18px;margin-bottom:22px}
+  .step-head .no{font-family:var(--disp);font-size:64px;font-weight:500;color:var(--clay-lt);line-height:.8}
+  .step-head .ln{flex:1;height:1px;background:var(--line);transform:translateY(-8px)}
+  .step-head .cnt{font-family:var(--sans);font-size:12px;color:var(--muted);letter-spacing:.08em;transform:translateY(-6px)}
+  h2{font-size:26px;font-weight:700;line-height:1.5;margin:0 0 10px;letter-spacing:-.01em}
+  .sub{font-family:var(--sans);font-size:14.5px;line-height:1.85;color:var(--muted);margin:0 0 26px}
+  h3{font-family:var(--sans);font-size:12px;letter-spacing:.24em;color:var(--clay);font-weight:700;margin:38px 0 14px}
+
+  /* 경로 */
+  .path{display:flex;gap:14px;align-items:baseline;background:var(--card);border:1px solid var(--line);padding:14px 18px;margin:0 0 22px}
+  .path .k{flex:none;font-family:var(--sans);font-size:11px;letter-spacing:.24em;color:var(--clay);font-weight:700}
+  .path .v{font-family:var(--sans);font-size:15px;line-height:1.7;color:var(--ink);font-weight:500}
+  .m{font-family:var(--sans);font-size:.88em;font-weight:500;color:var(--deep);background:rgba(166,120,95,.12);padding:1px 7px;white-space:nowrap}
+
+  /* 리스트 */
+  ul.list,ol.list{margin:0 0 1.4em;padding:0;list-style:none}
+  ul.list li,ol.list li{position:relative;font-size:17px;line-height:1.85;color:var(--body);padding:6px 0 6px 22px}
+  ul.list li::before{content:"";position:absolute;left:2px;top:20px;width:9px;height:1px;background:var(--clay)}
+  ol.list{counter-reset:o}
+  ol.list li{counter-increment:o;padding-left:30px}
+  ol.list li::before{content:counter(o);position:absolute;left:0;top:7px;font-family:var(--disp);font-size:21px;color:var(--clay);line-height:1.4}
+
+  /* 요약 표 */
+  .sum{border-top:1px solid var(--ink);margin:0 0 8px}
+  .sum .r{display:grid;grid-template-columns:44px 1fr 1.25fr;gap:14px;align-items:baseline;padding:15px 0;border-bottom:1px solid var(--line-soft)}
+  .sum .r.h{padding:10px 0;border-bottom:1px solid var(--line)}
+  .sum .r.h span{font-family:var(--sans);font-size:11px;letter-spacing:.24em;color:var(--muted);font-weight:700}
+  .sum .n{font-family:var(--disp);font-size:28px;color:var(--clay);line-height:1}
+  .sum .w{font-family:var(--sans);font-size:14px;line-height:1.7;color:var(--muted)}
+  .sum .v{font-size:16.5px;line-height:1.7;color:var(--ink);font-weight:500}
+  .sum.c4 .r{grid-template-columns:1fr 1.6fr .6fr .8fr}
+
+  /* 표 */
+  .tbl-wrap{margin:0 0 24px;overflow-x:auto}
+  table.tbl{width:100%;border-collapse:collapse;border-top:1px solid var(--ink)}
+  .tbl th{font-family:var(--sans);font-size:11px;letter-spacing:.2em;color:var(--muted);font-weight:700;text-align:left;padding:11px 12px 11px 0;border-bottom:1px solid var(--line)}
+  .tbl td{font-size:16px;line-height:1.75;color:var(--body);padding:14px 12px 14px 0;border-bottom:1px solid var(--line-soft);vertical-align:top}
+  .tbl td:first-child{font-family:var(--sans);font-size:14.5px;font-weight:700;color:var(--ink);white-space:nowrap}
+  .tbl td.wrap{white-space:normal}
+  .tbl td.nw{white-space:nowrap}
+  .tbl td em{font-style:normal;font-family:var(--sans);font-size:13.5px;color:var(--muted);display:block;margin-top:4px;line-height:1.7}
+  .tbl .star{color:var(--clay-dk);font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.06em;margin-right:4px}
+  .mark{display:inline-block;min-width:20px;font-family:var(--sans);font-weight:700}
+  .mark.ok{color:var(--ok)} .mark.no{color:var(--bad)} .mark.mid{color:var(--clay)}
+
+  /* 콜아웃 */
+  .callout{margin:32px 0;padding:26px 30px;background:rgba(255,255,255,.55);border-left:2px solid var(--clay-lt)}
+  .callout .t{font-family:var(--sans);font-size:11px;letter-spacing:.28em;color:var(--clay);font-weight:700;margin-bottom:14px}
+  .callout p{font-size:16.5px;line-height:1.85;margin:0 0 .6em}
+  .callout p:last-child{margin-bottom:0}
+  .callout .go{font-family:var(--sans);font-size:15px;font-weight:700;color:var(--deep);line-height:1.8}
+  .callout.warn{border-left-color:var(--bad)}
+  .callout.warn .t{color:var(--bad)}
+  .callout .row{display:flex;gap:14px;align-items:baseline;padding:9px 0;border-bottom:1px dashed rgba(43,37,33,.16)}
+  .callout .row:last-child{border-bottom:none}
+  .callout .row b{font-family:var(--sans);font-size:13px;color:var(--deep);min-width:86px;flex-shrink:0}
+  .callout .row span{font-size:16px;line-height:1.7;color:var(--body)}
+  .note{font-family:var(--sans);font-size:14.5px;line-height:1.85;color:var(--muted);border-top:1px dashed var(--line);padding-top:14px;margin:24px 0 0}
+
+  /* 체크 항목 */
+  .group{font-family:var(--sans);font-size:12px;letter-spacing:.24em;color:var(--clay);font-weight:700;margin:30px 0 4px}
+  .item{display:flex;gap:15px;align-items:flex-start;padding:15px 0;border-bottom:1px solid var(--line-soft);cursor:pointer}
+  .item input{position:absolute;opacity:0;width:0;height:0}
+  .box{flex-shrink:0;width:21px;height:21px;border:1.5px solid var(--clay-lt);background:#fff;margin-top:3px;
+    display:flex;align-items:center;justify-content:center;transition:all .15s ease}
+  .box::after{content:"";width:9px;height:5px;border-left:2px solid #fff;border-bottom:2px solid #fff;
+    transform:rotate(-45deg) scale(.4);opacity:0;transition:all .15s ease;margin-top:-2px}
+  .item input:checked + .box{background:var(--clay-dk);border-color:var(--clay-dk)}
+  .item input:checked + .box::after{opacity:1;transform:rotate(-45deg) scale(1)}
+  .item input:focus-visible + .box{outline:2px solid var(--deep);outline-offset:3px}
+  .item .txt{font-size:17px;line-height:1.72;color:var(--body)}
+  .item .txt em{font-style:normal;font-family:var(--sans);font-size:13.5px;color:var(--muted);display:block;margin-top:5px;line-height:1.7}
+  .item input:checked ~ .txt{color:var(--muted)}
+  .item:hover .box{border-color:var(--clay-dk)}
+
+  /* 판정 */
+  .judge{margin:34px 0 0;padding:24px 28px;background:var(--card);border:1px solid var(--line);
+    border-left:3px solid var(--clay-lt);transition:border-color .2s ease}
+  .judge .t{font-family:var(--sans);font-size:11px;letter-spacing:.28em;color:var(--clay);font-weight:700;margin-bottom:12px}
+  .judge .cnt-line{display:flex;align-items:baseline;gap:9px;margin-bottom:12px}
+  .judge .n{font-family:var(--disp);font-size:40px;font-weight:500;color:var(--deep);line-height:.9}
+  .judge .d{font-family:var(--sans);font-size:13px;color:var(--muted);letter-spacing:.02em}
+  .judge .msg{font-size:16.5px;line-height:1.8;color:var(--body)}
+  .judge.lv-0{border-left-color:#C7BDB2}
+  .judge.lv-1{border-left-color:var(--clay-lt)}
+  .judge.lv-2{border-left-color:var(--clay)}
+  .judge.lv-3{border-left-color:var(--deep)}
+
+  /* 자주 묻는 질문 */
+  .faq{border-bottom:1px solid var(--line-soft)}
+  .faq:first-of-type{border-top:1px solid var(--line)}
+  .faq summary{list-style:none;cursor:pointer;display:flex;gap:14px;align-items:baseline;padding:18px 0;font-size:17.5px;font-weight:600;line-height:1.6;color:var(--ink)}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary .q{flex:none;font-family:var(--disp);font-size:24px;color:var(--clay);line-height:1}
+  .faq summary .pm{margin-left:auto;flex:none;font-family:var(--sans);font-size:18px;color:var(--clay-lt);transition:transform .2s ease}
+  .faq[open] summary .pm{transform:rotate(45deg)}
+  .faq .a{padding:0 0 20px 31px}
+  .faq .a p{font-size:16.5px;line-height:1.9;margin:0 0 .7em}
+  .faq .a p:last-child{margin-bottom:0}
+
+  /* 프롬프트 */
+  .prompt{position:relative;margin:0 0 30px;background:var(--ink);color:#EFE6DA}
+  .prompt .bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px 12px 20px;border-bottom:1px solid rgba(255,255,255,.1)}
+  .prompt .bar span{font-family:var(--sans);font-size:12px;letter-spacing:.14em;color:var(--clay-lt);font-weight:700}
+  .prompt .copy{font-family:var(--sans);font-size:12.5px;font-weight:700;color:var(--ink);background:var(--clay-lt);border:none;padding:8px 14px;cursor:pointer;transition:background .15s}
+  .prompt .copy:hover{background:#E4C4A6}
+  .prompt .copy.done{background:#B9CDB0}
+  .prompt pre{margin:0;padding:18px 20px 22px;font-family:var(--sans);font-size:14.5px;line-height:1.85;white-space:pre-wrap;word-break:keep-all;overflow-wrap:anywhere}
+
+  .foot{margin-top:72px;font-family:var(--sans);font-size:13px;line-height:1.95;color:var(--muted);border-top:1px solid var(--line);padding-top:20px}
+  .foot b{color:var(--body)}
+
+  /* 마무리 */
+  .cta{margin-top:70px;padding:44px 34px;background:var(--card);border:1px solid var(--line);text-align:center}
+  .cta .pre{font-family:var(--disp);font-size:14px;letter-spacing:.5em;color:var(--clay);text-transform:uppercase;margin-bottom:18px}
+  .cta h4{font-size:21px;font-weight:700;line-height:1.65;margin:0 0 14px}
+  .cta p{font-size:16px;margin:0}
+  .cta-btn{display:inline-block;margin-top:26px;padding:15px 34px;background:var(--deep);color:#FBF8F3;
+    font-family:var(--sans);font-size:15px;font-weight:700;letter-spacing:.04em;text-decoration:none;transition:background .15s ease}
+  .cta-btn:hover{background:var(--clay-dk)}
+  .cta-url{font-family:var(--sans);font-size:12px;color:var(--muted);letter-spacing:.04em;margin-top:14px}
+
+  .cta-inline{display:flex;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);
+    padding:20px 22px;margin:64px 0;text-decoration:none;transition:border-color .15s ease}
+  .cta-inline:hover{border-color:var(--clay-lt)}
+  .cta-inline .icon{flex:none;width:40px;height:40px;background:var(--deep);color:#FBF8F3;
+    display:flex;align-items:center;justify-content:center;font-family:var(--disp);font-size:19px;font-weight:500}
+  .cta-inline .txt{flex:1;min-width:0}
+  .cta-inline .txt .t1{display:block;font-family:var(--sans);font-size:15.5px;font-weight:700;color:var(--ink);line-height:1.6;margin-bottom:3px}
+  .cta-inline .txt .t2{display:block;font-family:var(--sans);font-size:13.5px;color:var(--muted);line-height:1.7}
+  .cta-inline .arrow{flex:none;font-family:var(--sans);font-size:13.5px;font-weight:700;color:var(--clay-dk)}
+
+  #dock{position:fixed;left:0;right:0;bottom:0;z-index:60;transform:translateY(140%);opacity:0;
+    transition:transform .35s cubic-bezier(.2,.8,.2,1),opacity .25s ease;pointer-events:none}
+  #dock.show{transform:translateY(0);opacity:1;pointer-events:auto}
+  #dock .inner{max-width:680px;margin:0 auto;padding:0 20px 18px}
+  #dock .card{display:flex;align-items:center;gap:16px;background:var(--ink);color:#F0E7DC;
+    padding:12px 14px 12px 20px;box-shadow:0 12px 30px rgba(43,37,33,.28)}
+  #dock .dock-t1{font-family:var(--sans);font-size:14px;font-weight:700;color:#F0E7DC;line-height:1.5}
+  #dock .dock-t2{font-family:var(--sans);font-size:12.5px;color:#C9BCB1;line-height:1.6;margin-top:2px}
+  #dock .dock-btn{flex:none;background:var(--clay-lt);color:var(--ink);font-family:var(--sans);
+    font-size:14px;font-weight:700;padding:11px 20px;text-decoration:none;white-space:nowrap;transition:background .15s ease}
+  #dock .dock-btn:hover{background:#E4C4A6}
+
+  .sign{margin-top:56px;text-align:center;font-family:var(--sans);font-size:13px;color:var(--muted);letter-spacing:.06em}
+  .tools{display:flex;gap:10px;justify-content:center;margin-top:34px}
+  .tools button{font-family:var(--sans);font-size:12.5px;letter-spacing:.06em;color:var(--clay-dk);
+    background:transparent;border:1px solid var(--line);padding:10px 18px;cursor:pointer;transition:all .15s}
+  .tools button:hover{background:var(--card);border-color:var(--clay-lt)}
+
+  @media (max-width:600px){
+    main{padding:0 20px 90px}
+    h1{font-size:27px}
+    h2{font-size:22px}
+    p{font-size:17px}
+    .step-head .no{font-size:48px}
+    .judge{padding:20px 20px}
+    .judge .n{font-size:34px}
+    .item .txt{font-size:16px}
+    .callout{padding:22px 20px}
+    .callout .row{flex-direction:column;gap:2px}
+    .sum .r{grid-template-columns:34px 1fr;gap:4px 10px}
+    .sum .r .v{grid-column:2}
+    .sum .r.h{display:none}
+    .sum .n{font-size:24px;grid-row:span 2}
+    .sum.c4 .r{grid-template-columns:1fr;gap:4px}
+    .sum.c4 .r .v{grid-column:1}
+    .tbl td{font-size:15px}
+    .tbl td:first-child{white-space:normal;min-width:84px}
+    .path{flex-direction:column;gap:4px}
+    .cta-inline{padding:16px 18px;gap:12px}
+    #dock .dock-t1{font-size:13px}
+    #dock .dock-t2{font-size:11.5px}
+    #dock .card{padding:10px 12px 10px 16px;gap:10px}
+    #dock .dock-btn{font-size:13px;padding:10px 16px}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+  @media print{
+    .tools,#dock,.cta-inline,.prompt .copy{display:none}
+    body{background:#fff}
+    .step{padding-top:44px}
+    .box{border-color:#999}
+    .faq .a{display:block}
+    .cta-btn{background:none!important;color:var(--deep)!important;border:1px solid #999;padding:12px 24px}
+    .judge,.callout,.prompt,.tbl-wrap{page-break-inside:avoid}
+    .prompt{background:#fff;color:var(--ink);border:1px solid #999}
+  }
+</style>
+</head>
+<body>
+
+<div class="eyebrow-bar">
+  <span class="rule"></span>
+  <span class="txt">영구오빠 · 반영구 마케팅</span>
+  <span class="rule"></span>
+</div>
+
+<main>
+  <section class="lede">
+    <div class="kicker">⚙️ 업로드 전 점검</div>
+    <h1>릴스 올리기 전<br>바꿔야 할 인스타 설정 7가지</h1>
+    <p>조회수가 계속 안 나온다면 <b>콘텐츠보다 먼저 볼 것이 있습니다.</b></p>
+    <p>아래 7개는 인스타 기본값 그대로 두면 <b>내 게시물이 퍼지는 길을 좁힐 수 있는 설정</b>들입니다. 전부 5분이면 끝납니다.</p>
+    <div class="meta">
+      설정 7가지 · 전부 5분<br>
+      잘 된 게시물이 막히지 않게 하는 설정입니다 · 앱 업데이트 후 한 번씩 다시 확인하세요
+    </div>
+  </section>
+
+  <!-- ═══ 요약 ═══ -->
+  <section class="step">
+    <div class="step-head"><span class="no">00</span><span class="ln"></span><span class="cnt">30초 요약</span></div>
+    <h2>어디로 들어가서<br>어떻게 바꾸나</h2>
+    <p class="sub">메뉴가 안 보이면 설정 상단 검색창에 항목 이름을 그대로 치세요.</p>
+    <div class="sum">
+      <div class="r h"><span></span><span>어디로 들어가서</span><span>어떻게 바꾸나</span></div>
+      <div class="r"><span class="n">1</span><span class="w">설정 → 팔로잉 및 초대</span><span class="v"><span class="m">검토를 위해 플래그 지정</span> 끄기</span></div>
+      <div class="r"><span class="n">2</span><span class="w">설정 → 계정 공개 범위</span><span class="v"><span class="m">비공개 계정</span> 끄기 · <span class="m">검색 엔진 표시 허용</span> 켜기</span></div>
+      <div class="r"><span class="n">3</span><span class="w">설정 맨 아래 → 계정 상태</span><span class="v">전부 초록불인지 확인</span></div>
+      <div class="r"><span class="n">4</span><span class="w">설정 → 공유 및 다시 사용</span><span class="v"><span class="m">스토리에 게시물 및 릴스 공유</span> · <span class="m">리포스트</span> 켜기</span></div>
+      <div class="r"><span class="n">5</span><span class="w">계정 센터 → 프로필 및 개인정보</span><span class="v">페이스북 · 스레드 연결</span></div>
+      <div class="r"><span class="n">6</span><span class="w">설정 → 미디어 품질</span><span class="v"><span class="m">고화질로 업로드</span> 켜기</span></div>
+      <div class="r"><span class="n">7</span><span class="w">설정 → 프로페셔널 대시보드</span><span class="v">프로페셔널 계정으로 전환</span></div>
+    </div>
+
+    <div class="callout">
+      <div class="t">시간이 없으면 이 순서로</div>
+      <p>중요도가 같지는 않습니다.</p>
+      <div class="row"><b>① 도달</b><span>3번 계정 상태 · 2번 공개 범위 · 6번 고화질 — 도달에 직접 걸리는 것</span></div>
+      <div class="row"><b>② 확산</b><span>4번 공유 · 5번 플랫폼 연결 — 퍼지는 길을 늘리는 것</span></div>
+      <div class="row"><b>③ 문의</b><span>1번 플래그 — 문의를 놓치지 않는 것</span></div>
+      <div class="row"><b>④ 원인</b><span>7번 인사이트 — 원인을 보는 것</span></div>
+    </div>
+  </section>
+
+  <!-- ═══ 1 ═══ -->
+  <section class="step">
+    <div class="step-head"><span class="no">01</span><span class="ln"></span><span class="cnt">끄기</span></div>
+    <h2>검토를 위해 플래그 지정</h2>
+    <p class="sub">도달수가 아니라 「올 사람을 놓치지 않는」 설정입니다.</p>
+    <div class="path"><span class="k">경로</span><span class="v">설정 → 팔로잉 및 초대 → <span class="m">검토를 위해 플래그 지정</span></span></div>
+    <ul class="list">
+      <li>이 기능이 켜져 있으면 인스타가 <b>「스팸일 수 있다」고 판단한 프로필의 팔로우 요청을 따로 빼서</b> 별도 섹션으로 보냅니다.</li>
+      <li>매장 계정은 <b>신규 고객이 새 계정으로 팔로우하는 경우가 많습니다.</b> 그런 계정이 스팸으로 분류되면 <b>팔로우도, 문의도 모르고 지나갑니다.</b></li>
+    </ul>
+  </section>
+
+  <!-- ═══ 2 ═══ -->
+  <section class="step">
+    <div class="step-head"><span class="no">02</span><span class="ln"></span><span class="cnt">전체 공개</span></div>
+    <h2>계정 공개 범위<br>— 전체 공개 + 검색 노출</h2>
+    <p class="sub">닫혀 있으면 신규 유입이 구조적으로 막힙니다.</p>
+    <div class="path"><span class="k">경로</span><span class="v">설정 → 계정 공개 범위</span></div>
+    <div class="tbl-wrap"><table class="tbl">
+      <tr><th>항목</th><th>값</th><th>이유</th></tr>
+      <tr><td class="wrap">비공개 계정</td><td class="nw"><b>끄기</b></td><td>비공개면 <b>팔로워가 아닌 사람에게는 릴스가 가지 않습니다.</b> 신규 유입이 구조적으로 막힙니다</td></tr>
+      <tr><td class="wrap">공개 사진과 동영상이 검색 엔진 결과에 표시되도록 허용</td><td class="nw"><b>켜기</b></td><td>구글 같은 검색 엔진에 내 게시물이 노출됩니다. <b>「지역명 + 눈썹문신」으로 검색하는 고객</b>을 받는 통로입니다</td></tr>
+    </table></div>
+    <div class="callout">
+      <div class="t">인스타 안내문 그대로</div>
+      <p>「이 옵션을 설정하면 Google과 같은 검색 엔진이 회원님의 공개 사진과 동영상을 Instagram 외부의 검색 결과에 표시할 수 있습니다.」</p>
+    </div>
+  </section>
+
+  <!-- ═══ 3 ═══ -->
+  <section class="step">
+    <div class="step-head"><span class="no">03</span><span class="ln"></span><span class="cnt">초록불 5개</span></div>
+    <h2>계정 상태<br>— 초록불인지 확인</h2>
+    <p class="sub">아래 5개 항목이 전부 초록색 체크여야 합니다.</p>
+    <div class="path"><span class="k">경로</span><span class="v">설정 맨 아래로 내리기 → <span class="m">계정 상태</span></span></div>
+    <div class="tbl-wrap"><table class="tbl">
+      <tr><th>항목</th><th>의미</th></tr>
+      <tr><td>기능</td><td>기능 제한이 걸려 있는지</td></tr>
+      <tr><td>콘텐츠 및<br>메시지 삭제</td><td>삭제된 게시물이 있는지</td></tr>
+      <tr><td><span class="star">★</span>추천 요건</td><td><b>가장 중요합니다.</b> 팔로워가 아닌 사람에게 추천될 수 있는 상태인지</td></tr>
+      <tr><td>만 19세 미만<br>이용 가능</td><td>연령 제한이 걸려 노출이 줄어들었는지</td></tr>
+      <tr><td>수익화</td><td>수익화 자격 제한 여부</td></tr>
+    </table></div>
+    <div class="callout warn">
+      <div class="t">노란 경고가 하나라도 있으면</div>
+      <p>인스타가 계정을 의심하고 있는 상태입니다. 이 상태에선 콘텐츠를 아무리 잘 만들어도 <b>추천 피드로 잘 안 나갑니다.</b></p>
+      <p class="go">→ 해당 항목을 눌러 무엇 때문인지 확인하고 소명하는 것이 우선입니다. 새 영상을 더 올리는 것보다 이게 먼저입니다.</p>
+    </div>
+  </section>
+
+  <!-- ═══ 4 ═══ -->
+  <section class="step">
+    <div class="step-head"><span class="no">04</span><span class="ln"></span><span class="cnt">켜기</span></div>
+    <h2>공유 및 다시 사용<br>— 공유 길 열어두기</h2>
+    <p class="sub">전후 영상은 고객이 퍼뜨립니다. 그 길을 막지 마세요.</p>
+    <div class="path"><span class="k">경로</span><span class="v">설정 → 공유 및 다시 사용</span></div>
+    <div class="tbl-wrap"><table class="tbl">
+      <tr><th>항목</th><th>값</th></tr>
+      <tr><td class="wrap">스토리에 게시물 및 릴스 공유</td><td class="nw"><b>켜기</b></td></tr>
+      <tr><td class="wrap">게시물과 릴스의 리포스트</td><td class="nw"><b>켜기</b></td></tr>
+      <tr><td class="wrap">스토리 공유</td><td><b>켜기</b> · 공개 대상은 <span class="m">모든 사람</span></td></tr>
+    </table></div>
+    <ul class="list">
+      <li>시술 전후 영상은 <b>고객이 친구에게 보내거나 자기 스토리에 올리면서 퍼지는 경우가 많습니다.</b></li>
+      <li>이 설정이 꺼져 있으면 그 경로 자체가 막힙니다. 올리는 영상 수보다 이게 먼저입니다.</li>
+    </ul>
+  </section>
+
+  <a class="cta-inline" href="https://open.kakao.com/o/pfEDVwFi" target="_blank" rel="noopener">
+    <span class="icon">?</span>
+    <span class="txt">
+      <span class="t1">계정 상태에 경고가 떠 있나요?</span>
+      <span class="t2">어떤 항목이 걸렸는지 보여주시면 무엇부터 정리할지 같이 짚어드립니다.</span>
+    </span>
+    <span class="arrow">물어보기 →</span>
+  </a>
+
+  <!-- ═══ 5 ═══ -->
+  <section class="step">
+    <div class="step-head"><span class="no">05</span><span class="ln"></span><span class="cnt">연결</span></div>
+    <h2>페이스북 · 스레드 연결</h2>
+    <p class="sub">같은 영상이 나갈 수 있는 창구를 늘립니다.</p>
+    <div class="path"><span class="k">경로</span><span class="v">설정 → 계정 센터 → 프로필 및 개인정보 → <span class="m">계정 추가</span></span></div>
+    <ul class="list">
+      <li>인스타그램 하나만 써도 되지만, <b>페이스북·스레드를 연결해두면 같은 영상이 나갈 수 있는 창구가 늘어납니다.</b></li>
+      <li>특히 <b>페이스북 페이지 연결</b>은 나중에 광고를 돌리거나 예약 버튼을 달 때 필수로 요구됩니다. 미리 해두세요.</li>
+    </ul>
+    <p class="note">연결만 해두고 스레드에 글을 안 올려도 상관없습니다. 통로를 열어두는 게 목적입니다.</p>
+  </section>
+
+  <!-- ═══ 6 ═══ -->
+  <section class="step">
+    <div class="step-head"><span class="no">06</span><span class="ln"></span><span class="cnt">켜기</span></div>
+    <h2>고화질로 업로드</h2>
+    <p class="sub">꺼져 있으면 인스타가 알아서 화질을 낮춥니다.</p>
+    <div class="path"><span class="k">경로</span><span class="v">설정 → 미디어 품질 → <span class="m">고화질로 업로드</span></span></div>
+    <ul class="list">
+      <li>꺼져 있으면 <b>네트워크 상태에 맞춰 업로드 품질이 자동으로 조정</b>됩니다. 즉 알아서 화질을 낮춥니다.</li>
+      <li>시술 사진은 <b>눈썹결 같은 미세한 디테일이 상품</b>입니다. 여기서 뭉개지면 잘 찍은 의미가 없어집니다.</li>
+    </ul>
+    <div class="callout">
+      <div class="t">켜도 네트워크가 불안정하면 똑같습니다</div>
+      <p class="go">→ 업로드는 와이파이 또는 안정적인 데이터 환경에서 하세요. 중간에 끊기면 재시도하면서 다시 압축됩니다.</p>
+    </div>
+  </section>
+
+  <!-- ═══ 7 ═══ -->
+  <section class="step">
+    <div class="step-head"><span class="no">07</span><span class="ln"></span><span class="cnt">인사이트</span></div>
+    <h2>프로페셔널 계정으로 전환</h2>
+    <p class="sub">전환하면 인사이트가 열립니다. 여기서 보는 것은 3가지입니다.</p>
+    <div class="path"><span class="k">경로</span><span class="v">설정 → <span class="m">프로페셔널 대시보드</span> / <span class="m">계정 유형 및 도구</span></span></div>
+    <div class="tbl-wrap"><table class="tbl">
+      <tr><th>지표</th><th>여기서 알 수 있는 것</th></tr>
+      <tr><td>조회수</td><td>전체 노출량. 늘고 줄어드는 추세만 보시면 됩니다</td></tr>
+      <tr><td class="wrap"><span class="star">★</span>팔로워 / 팔로워가 아닌 사람 비율</td><td><b>가장 중요합니다.</b> 팔로워가 아닌 사람 비율이 높아야 <b>신규 고객에게 뿌려지고 있다</b>는 뜻입니다</td></tr>
+      <tr><td class="wrap">콘텐츠 유형별 비중</td><td>릴스 / 스토리 / 게시물 중 어디서 반응이 나오는지</td></tr>
+    </table></div>
+    <p class="note">인사이트가 없으면 어떤 영상이 왜 된 건지 알 방법이 없습니다. 감으로 계속 올리는 것과 숫자를 보고 올리는 것은 몇 달 뒤에 크게 갈립니다.</p>
+  </section>
+
+  <!-- ═══ 체크리스트 ═══ -->
+  <section class="step">
+    <div class="step-head"><span class="no">✓</span><span class="ln"></span><span class="cnt">7 항목</span></div>
+    <h2>업로드 전 체크리스트</h2>
+    <p class="sub">설정 화면을 열어 놓고 하나씩 확인하세요. 체크 상태는 이 브라우저에 저장됩니다.</p>
+
+    <label class="item"><input type="checkbox"><span class="box"></span><span class="txt"><span class="m">검토를 위해 플래그 지정</span> 꺼짐</span></label>
+    <label class="item"><input type="checkbox"><span class="box"></span><span class="txt"><span class="m">비공개 계정</span> 꺼짐 + <span class="m">검색 엔진 표시 허용</span> 켜짐</span></label>
+    <label class="item"><input type="checkbox"><span class="box"></span><span class="txt"><span class="m">계정 상태</span> 5개 항목 전부 초록</span></label>
+    <label class="item"><input type="checkbox"><span class="box"></span><span class="txt"><span class="m">스토리에 게시물 및 릴스 공유</span> · <span class="m">리포스트</span> 켜짐</span></label>
+    <label class="item"><input type="checkbox"><span class="box"></span><span class="txt">페이스북 · 스레드 연결됨</span></label>
+    <label class="item"><input type="checkbox"><span class="box"></span><span class="txt"><span class="m">고화질로 업로드</span> 켜짐</span></label>
+    <label class="item"><input type="checkbox"><span class="box"></span><span class="txt">프로페셔널 계정 전환 · 인사이트 보임</span></label>
+
+    <div class="judge" data-judge='[[2,"기본값에 가까운 상태입니다. 잘 만든 릴스도 퍼질 길이 좁습니다. 3번 계정 상태부터 확인하세요."],[4,"절반은 열렸습니다. 비어 있는 항목이 지금 조회수가 새는 자리입니다."],[6,"거의 다 열렸습니다. 남은 하나가 도달·확산·문의 중 어디를 막고 있는지 확인하세요."],[7,"퍼지는 길은 전부 열렸습니다. 이제부터는 콘텐츠 실력대로 나옵니다."]]'>
+      <div class="t">판정</div>
+      <div class="cnt-line"><b class="n">0</b><span class="d">/ 7개 체크</span></div>
+      <div class="msg">체크할수록 판정이 올라갑니다.</div>
+    </div>
+  </section>
+
+  <!-- ═══ FAQ ═══ -->
+  <section class="step">
+    <div class="step-head"><span class="no">Q</span><span class="ln"></span><span class="cnt">자주 나오는 질문</span></div>
+    <h2>자주 나오는 질문</h2>
+    <p class="sub">눌러서 펼쳐 보세요.</p>
+
+    <details class="faq"><summary><span class="q">Q</span>이거 다 바꾸면 조회수가 바로 오르나요?<span class="pm">+</span></summary>
+      <div class="a"><p><b>아닙니다.</b> 이 7개는 올리는 것을 잘 되게 만드는 게 아니라, <b>잘 된 것이 막히지 않게 하는 설정</b>입니다.</p><p>여러 항목이 꺼져 있었다면 좋은 콘텐츠가 제대로 퍼지지 못했던 것이고, 켜둔 뒤부터는 콘텐츠 실력대로 나옵니다.</p></div></details>
+    <details class="faq"><summary><span class="q">Q</span>프로페셔널 계정으로 바꾸면 노출이 줄어든다는 말을 들었습니다<span class="pm">+</span></summary>
+      <div class="a"><p>오래전부터 도는 얘기인데 <b>인스타그램이 공식적으로 인정한 적은 없습니다.</b></p><p>반대로 인사이트 없이는 개선할 근거가 없습니다. 매장 계정이라면 전환하는 쪽을 권합니다. 언제든 되돌릴 수 있습니다.</p></div></details>
+    <details class="faq"><summary><span class="q">Q</span>계정 상태에 경고가 뜨는데 어떻게 하나요?<span class="pm">+</span></summary>
+      <div class="a"><p>해당 항목을 누르면 <b>어떤 게시물이 문제가 됐는지</b>가 나옵니다.</p><p>① 해당 게시물을 지우거나 ② 이의 제기를 하시면 됩니다. 정리되기 전까지는 새 영상을 몰아서 올리더라도 효과가 제한적입니다.</p></div></details>
+    <details class="faq"><summary><span class="q">Q</span>계정을 공개로 해두면 아무나 볼 수 있어 불편합니다<span class="pm">+</span></summary>
+      <div class="a"><p>매장 계정과 <b>개인 계정을 분리</b>하시는 것을 권합니다.</p><p>매장 계정은 간판입니다. 닫아두면 손님이 들어올 수 없습니다.</p></div></details>
+    <details class="faq"><summary><span class="q">Q</span>설정 메뉴가 제 폰과 다릅니다<span class="pm">+</span></summary>
+      <div class="a"><p>인스타그램은 앱 버전·계정별로 메뉴 위치가 조금씩 다릅니다.</p><p>설정 상단 <b>검색창에 항목 이름을 그대로 검색</b>하시면 바로 찾아집니다. (예: <span class="m">계정 상태</span>, <span class="m">미디어 품질</span>)</p></div></details>
+  </section>
+
+  <div class="foot"><b>확인 기준</b> · 2026년 10월 · Instagram 최신 버전 기준입니다. 앱 업데이트로 메뉴 이름과 위치가 바뀔 수 있습니다.</div>
+
+  <div class="cta">
+    <div class="pre">Join us</div>
+    <h4>설정은 다 열었는데<br>조회수가 여전히 안 나온다면</h4>
+    <p>단톡방에서 원장님 계정 상황에 맞게 하나씩 같이 풀어드리겠습니다.</p>
+    <a class="cta-btn" href="https://open.kakao.com/o/pfEDVwFi" target="_blank" rel="noopener">오픈카톡방 입장하기 →</a>
+    <div class="cta-url">open.kakao.com/o/pfEDVwFi</div>
+  </div>
+
+
+  <div class="tools">
+    <button type="button" onclick="window.print()">인쇄 / PDF 저장</button>
+    <button type="button" id="reset">체크 초기화</button>
+  </div>
+
+  <div class="sign">— 영구오빠 드림</div>
+
+</main>
+
+<div id="dock">
+  <div class="inner">
+    <div class="card">
+      <div style="flex:1;min-width:0">
+        <div class="dock-t1">체크 <span id="dock-count">0</span> / <span id="dock-total">0</span> 완료</div>
+        <div class="dock-t2">설정은 했는데 조회수가 그대로라면?</div>
+      </div>
+      <a class="dock-btn" href="https://open.kakao.com/o/pfEDVwFi" target="_blank" rel="noopener">단톡방 입장 →</a>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var KEY = 'yg_insta_upload_check';
+  var allBoxes = Array.prototype.slice.call(document.querySelectorAll('.item input[type=checkbox]'));
+
+  // 체크 상태는 이 브라우저에만 저장됩니다
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(KEY) || '[]'); } catch (e) {}
+  allBoxes.forEach(function(b, i){ if (saved[i]) b.checked = true; });
+  function save(){
+    try { localStorage.setItem(KEY, JSON.stringify(allBoxes.map(function(b){ return b.checked ? 1 : 0; }))); } catch (e) {}
+  }
+
+  var groups = [];
+  document.querySelectorAll('.step').forEach(function(section){
+    var judge = section.querySelector('.judge');
+    if (!judge) return;
+    var levels;
+    try { levels = JSON.parse(judge.getAttribute('data-judge')); } catch (e) { return; }
+    groups.push({ boxes: Array.prototype.slice.call(section.querySelectorAll('.item input[type=checkbox]')), judge: judge, levels: levels });
+  });
+
+  function render(g){
+    var n = 0;
+    g.boxes.forEach(function(b){ if (b.checked) n++; });
+    var idx = g.levels.length - 1;
+    for (var i = 0; i < g.levels.length; i++){
+      if (n <= g.levels[i][0]) { idx = i; break; }
+    }
+    g.judge.querySelector('.n').textContent = n;
+    g.judge.querySelector('.msg').textContent = g.levels[idx][1];
+    g.judge.className = 'judge lv-' + Math.min(idx, 3);
+  }
+
+  var dockCount = document.getElementById('dock-count');
+  document.getElementById('dock-total').textContent = allBoxes.length;
+  function renderDock(){
+    var n = 0;
+    allBoxes.forEach(function(b){ if (b.checked) n++; });
+    dockCount.textContent = n;
+  }
+
+  groups.forEach(function(g){ render(g); });
+  allBoxes.forEach(function(b){
+    b.addEventListener('change', function(){ groups.forEach(render); renderDock(); save(); });
+  });
+  renderDock();
+
+  document.getElementById('reset').addEventListener('click', function(){
+    allBoxes.forEach(function(b){ b.checked = false; });
+    groups.forEach(render); renderDock(); save();
+  });
+
+  // 프롬프트 복사
+  document.querySelectorAll('.prompt').forEach(function(p){
+    var btn = p.querySelector('.copy');
+    if (!btn) return;
+    btn.addEventListener('click', function(){
+      var text = p.querySelector('pre').innerText;
+      function done(){ btn.textContent = '복사됨'; btn.classList.add('done');
+        setTimeout(function(){ btn.textContent = '복사하기'; btn.classList.remove('done'); }, 1600); }
+      if (navigator.clipboard) { navigator.clipboard.writeText(text).then(done, fallback); } else { fallback(); }
+      function fallback(){
+        var ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta);
+        ta.select(); try { document.execCommand('copy'); done(); } catch (e) {} document.body.removeChild(ta);
+      }
+    });
+  });
+
+  // 플로팅 독
+  var dock = document.getElementById('dock');
+  function onScroll(){
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    var p = h > 0 ? Math.min(100, (window.scrollY / h) * 100) : 0;
+    dock.classList.toggle('show', p > 12 && p < 95);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+
+</body>
+</html>
